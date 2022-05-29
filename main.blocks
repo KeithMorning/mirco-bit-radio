@@ -1,0 +1,26 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="O1+|b*FXJomG*BR^4dh(">cardRun</variable></variables><block type="pxt-on-start" id="E77]5v`=4p,d4DzhEq)," x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="42nsi(Rgx5eA9Z3(n%;z"><field name="VAR" id="O1+|b*FXJomG*BR^4dh(">cardRun</field><value name="VALUE"><shadow type="math_number" id=";ZH~~2s2!Z1`8JW9:r]w"><field name="NUM">0</field></shadow></value><next><block type="radio_set_group" id="{RCgd%BAWF`:w=lEtB53"><value name="ID"><shadow type="math_number_minmax" id="Eoz_nCe#]a8tIIPxO2EM"><mutation min="0" max="255" label="Number" precision="0"/><field name="SLIDER">708</field></shadow></value></block></next></block></statement></block><block type="radio_on_number_drag" id="1p}D%BEmv}k3!YWEA8j|" x="7" y="273"><comment>1 运行中
+0 暂停</comment><value name="HANDLER_DRAG_PARAM_receivedNumber"><shadow type="argument_reporter_number" id="*DT}e{1[FCkS%|/m~;GW"><field name="VALUE">receivedNumber</field></shadow></value><statement name="HANDLER"><block type="variables_set" id="fv@V9uBFgAu_#}]h7D-}"><field name="VAR" id="O1+|b*FXJomG*BR^4dh(">cardRun</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="argument_reporter_number" id="~1D7f--sXy=pG:iNNJdT"><field name="VALUE">receivedNumber</field></block></value></block></statement></block><block type="device_forever" id="gI2mFTt_B78K:/?1~)O*" x="-423" y="302"><statement name="HANDLER"><block type="controls_if" id="zhi9,}0/s4RM~eKx=s#F"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="zgi1hqi[W:.C@L_@~Osa"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="3*yzaMkTE,5]2z2SVvif"><field name="VAR" id="O1+|b*FXJomG*BR^4dh(">cardRun</field></block></value><value name="B"><shadow type="math_number" id="{K*!^{F$fm!zS,{m*EUC"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="|ZW5rzHuZQgI`oyZ@EvM"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # . . 
+        . # . # . 
+        # . . . #
+        `</field><next><block type="device_show_leds" id="niDOy*`kStHY`9_=-=DO"><field name="LEDS">`
+        . . . . . 
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="tu}$;eO4WG64zW2D:]G/"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        # . . . # 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id=".`!Nr}K2nTv^hy=[:DR!"><field name="LEDS">`
+        . . . . . 
+        # . . . # 
+        # # # # # 
+        # . . . # 
+        . . . . .
+        `</field></block></statement></block></statement></block><block type="control_on_event" id="3tv#i5J?l=1x1mLX;^xL" x="4" y="457"><value name="src"><shadow type="control_event_source_id" id="n%%B9AFY1Jklt|{t(6l,"><field name="id">EventBusSource.MICROBIT_ID_BUTTON_A</field></shadow></value><value name="value"><shadow type="control_event_value_id" id="GPb)eg+]=j:v21_[fi%="><field name="id">EventBusValue.MICROBIT_BUTTON_EVT_UP</field></shadow></value><statement name="HANDLER"><block type="radio_datagram_send" id="=%h]%GxBMQJo0j{o8nt7"><value name="value"><shadow type="math_number" id="YQ9~Ofy#CU+3m[4ZgqZn"><field name="NUM">0</field></shadow></value></block></statement></block><block type="control_on_event" id="r)0jU%O?!O8x{D(df-]6" x="5" y="617"><value name="src"><shadow type="control_event_source_id" id="dHF]@WC/ZbF[BJ|UMD-["><field name="id">EventBusSource.MICROBIT_ID_BUTTON_B</field></shadow></value><value name="value"><shadow type="control_event_value_id" id="OjHz^KMYL@{DqH{CM8.m"><field name="id">EventBusValue.MICROBIT_BUTTON_EVT_UP</field></shadow></value><statement name="HANDLER"><block type="radio_datagram_send" id="_yT!x:xZ#x){!Xu:H2!*"><value name="value"><shadow type="math_number" id="tt3PuOmG%dmR_sQQ,DDI"><field name="NUM">1</field></shadow></value></block></statement></block></xml>
